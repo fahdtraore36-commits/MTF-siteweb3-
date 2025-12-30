@@ -1,0 +1,98 @@
+body {
+    font-size: 15pt;
+      background-image: url('');
+     background-size: cover; 
+     background-position: center;
+     background-repeat: no-repeat;
+     text-align: center;
+     font-weight: bold;
+}
+#mtf {
+    float: left;
+    position: relative;
+    left: 0px;
+    border-radius: 20px;
+}
+h1 {
+    color: darkblue;
+    position: absolute;
+    right: 45px;
+    top: 50px;
+}
+span {
+    color: darkblue;
+    z-index: 1;
+}
+#nom {
+    position: relative;
+    top: 2px;
+}
+#aut {
+    margin-top: 170px;
+}
+.ima {
+    border-radius: 10px;
+    float: left;
+}
+.text {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.titre {
+    color: dodgerblue;
+}
+.service-card {
+    opacity: 0;
+    transform: translateY(30px);
+    /* On définit la durée de l'animation, le délai sera ajouté par le JS */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+      border: none;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.service-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    background: #007bff; /* Bleu MTF */
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    max-height: 0; /* Caché par défaut */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* L'animation de pliage */
+    background: #f9f9f9;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px; /* Se déplie */
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+details {
+    margin: 15px;
+}
+#mami {
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 40px;
+}
+li{
+    display: inline;
+}
+#laban {
+    color: darkblue;
+}
