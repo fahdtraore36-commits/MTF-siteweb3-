@@ -99,3 +99,55 @@ li{
 #laban {
     color: darkblue;
 }
+
+        /* Styles pour les boutons flottants */
+        #contact-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-family: 'Montserrat', sans-serif; /* J'ai choisi une police moderne qui se rapproche de ton site */
+        }
+
+        #contact-buttons a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        #contact-buttons a:hover {
+            transform: translateY(-3px); /* Effet léger au survol (sur ordinateur) */
+        }
+
+        #contact-buttons a span:first-child { /* Icônes */
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        #contact-buttons a span:last-child { /* Texte du bouton */
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Couleurs spécifiques harmonisées */
+        .whatsapp-button {
+            background-color: #25D366; /* Vert WhatsApp classique */
+        }
+        .whatsapp-button:hover {
+            background-color: #1DA851; /* Vert plus foncé au survol */
+        }
+
+        .call-button {
+            background-color: #007bff; /* Bleu primaire, comme certains éléments de ton site */
+        }
+        .call-button:hover {
+            background-color: #0056b3; /* Bleu plus foncé au survol */
+        }
